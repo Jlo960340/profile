@@ -1,0 +1,118 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: white;
+    color: black padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: fixed; */
+    /* 讓 header 固定在頂部 */
+    /* width: 100%; */
+    /* 使 header 充滿整個寬度 */
+    /* top: 0; */
+    /* 距離頁面頂部的距離為 0 */
+    /* z-index: 999; */
+    /* 設定 z-index 避免被其他元素遮擋 */
+}
+
+a {
+    text-decoration: none;
+    /* 去除超連結的下劃線 */
+    color: inherit;
+    /* 使文字顏色繼承父級元素的顏色 */
+}
+
+
+.logo {
+    margin-left: 20px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-circle {
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+.section h2 {
+    margin-right: 20px;
+    /* 添加右边距，调整标题和内容之间的间距 */
+}
+
+.section dl,
+.section ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.section dl {
+    margin-left: auto;
+}
+
+.section dl dd,
+.section ul li {
+    align-self: flex-start;
+}
+
+h1,
+h2 {
+    font-weight: bold;
+}
+
+dl {
+    margin: 0;
+    padding: 0;
+}
+
+dt {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+dd {
+    margin: 0 0 10px 0;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}

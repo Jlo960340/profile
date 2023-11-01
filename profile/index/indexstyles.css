@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", Times, serif;
+}
+
+header {
+    background-color: white;
+    color: black padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: fixed; */
+    /* 讓 header 固定在頂部 */
+    /* width: 100%; */
+    /* 使 header 充滿整個寬度 */
+    /* top: 0; */
+    /* 距離頁面頂部的距離為 0 */
+    /* z-index: 999; */
+    /* 設定 z-index 避免被其他元素遮擋 */
+}
+
+a {
+    text-decoration: none;
+    /* 去除超連結的下劃線 */
+    color: inherit;
+    /* 使文字顏色繼承父級元素的顏色 */
+}
+
+
+.logo {
+    margin-left: 20px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-circle {
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+    /* 讓元素垂直排列 */
+    /* margin-bottom: 20px; */
+    /* 距離下方內容的距離 */
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    background-color: lightgray;
+    /* 你的大頭照 */
+    border-radius: 50%;
+    /* margin-bottom: 20px; */
+    overflow: hidden;
+    /* 裁剪超出邊界的部分 */
+    /* object-fit: cover; */
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* 保持圖片比例，並且填充整個容器 */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+    /* 對齊左邊 */
+}
+
+.about-me {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.about-me-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.about-me-content {
+    font-size: 16px;
+}
+
+.buttons {
+    display: flex;
+    /* flex-direction: flex; */
+    /* 將圓圈排列改為垂直方向 */
+    /* margin-left: 20px; */
+    /* 距離大頭照的距離 */
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+    /* 圓圈之間的水平間距 */
+    margin-bottom: 20px;
+    /* 圓圈之間的間距 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: bold;
+    /* 設定粗體 */
+    font-size: 14px;
+    /* 設定字體大小 */
+    transition: background-color 0.3s ease;
+}
+
+.resume {
+    background-color: yellow;
+    color: black;
+}
+
+.project {
+    background-color: lightblue;
+    color: black;
+}
+
+.contact {
+    background-color: gray;
+    color: black;
+}
+
+.circle:hover {
+    background-color: white;
+}
+
+h1 {
+    font-size: 30px;
+}
