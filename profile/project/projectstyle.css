@@ -88,63 +88,73 @@ nav ul li a:hover {
 
 }
 
-.content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.section {
-    margin-bottom: 30px;
+.grid-container {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-
-.section h2 {
-    margin-right: 20px;
-    /* 添加右边距，调整标题和内容之间的间距 */
-}
-
-.section dl,
-.section ul {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.section dl {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+    max-width: 700px;
     margin-left: auto;
+    margin-right: auto;
 }
 
-.section dl dd,
-.section ul li {
-    align-self: flex-start;
+.grid-item {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
 }
 
-h1,
-h2 {
+.project-content {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    background-color: #ccd2cc;
+    padding: 20px;
+    transition: bottom 0.5s ease;
+    z-index: 0;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-20px);
+    background-color: rgba(255, 255, 255, 1);
+    /* 移除半透明背景 */
+    transform: scale(1.1);
+    /* 放大效果 */
+}
+
+.grid-item:hover .project-content {
+    bottom: 0;
+}
+
+.grid-item:hover img {
+    opacity: 1;
+}
+
+.grid-item:hover .project-title {
+    display: none;
+}
+
+.project-title {
     font-weight: bold;
-}
-
-dl {
     margin: 0;
-    padding: 0;
-}
-
-dt {
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-dd {
-    margin: 0 0 10px 0;
-}
-
-ul {
-    list-style-type: disc;
-    margin-left: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: #ccd2cc;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 footer {
