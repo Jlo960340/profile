@@ -1,274 +1,282 @@
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: "Times New Roman", Times, serif;
-        position: relative;
-    }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", Times, serif;
+    position: relative;
+}
 
-    body::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(to bottom right, #FDE7D2 50%, #D2B48C 50%);
-        z-index: -1;
-    }
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, #FDE7D2 50%, #D2B48C 50%);
+    z-index: -1;
+}
 
-    header {
-        background-color: #8c736f;
-        color: black;
-        padding: 10px 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        /* position: fixed; */
-        /* 讓 header 固定在頂部 */
-        /* width: 100%; */
-        /* 使 header 充滿整個寬度 */
-        /* top: 0; */
-        /* 距離頁面頂部的距離為 0 */
-        /* z-index: 999; */
-        /* 設定 z-index 避免被其他元素遮擋 */
-    }
+header {
+    background-color: #8c736f;
+    color: black;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: fixed; */
+    /* 讓 header 固定在頂部 */
+    /* width: 100%; */
+    /* 使 header 充滿整個寬度 */
+    /* top: 0; */
+    /* 距離頁面頂部的距離為 0 */
+    /* z-index: 999; */
+    /* 設定 z-index 避免被其他元素遮擋 */
+}
 
-    a {
-        text-decoration: none;
-        /* 去除超連結的下劃線 */
-        color: inherit;
-        /* 使文字顏色繼承父級元素的顏色 */
-    }
-
-
-    .logo {
-        margin-left: 20px;
-        font-size: 24px;
-        display: flex;
-        align-items: center;
-    }
-
-    .logo:hover {
-        color: #D2B48C;
-        transform: translateY(-10px);
-        /* 向上移动5像素，你可以根据需要调整这个值 */
-        transition: transform 0.5s ease;
-        /* 添加平滑过渡效果，持续时间为0.3秒 */
-    }
-
-    .logo-circle {
-        width: 20px;
-        height: 20px;
-        background-color: orange;
-        border-radius: 50%;
-        margin-right: 10px;
-    }
-
-    nav ul {
-        list-style: none;
-        display: flex;
-        margin-right: 20px;
-    }
-
-    nav ul li {
-        margin: 0 15px;
-    }
-
-    nav ul li a {
-        text-decoration: none;
-        color: black;
-        background-color: transparent;
-        /* 背景透明 */
+a {
+    text-decoration: none;
+    /* 去除超連結的下劃線 */
+    color: inherit;
+    /* 使文字顏色繼承父級元素的顏色 */
+}
 
 
-    }
+.logo {
+    margin-left: 20px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.logo:hover {
+    color: #D2B48C;
+    transform: translateY(-10px);
+    /* 向上移动5像素，你可以根据需要调整这个值 */
+    transition: transform 0.5s ease;
+    /* 添加平滑过渡效果，持续时间为0.3秒 */
+}
+
+.logo-circle {
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+    /* 背景透明 */
 
 
-    nav ul li a:hover {
-        /* background-color: #F0A5A0; */
-        /* 背景顏色變為 #F0A5A0 */
-        color: #D2B48C;
-        /* 文字顏色保持為黑色 */
-        /* font-weight: bold; */
-
-    }
-
-    .main-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-    }
-
-    .profile-container {
-        display: flex;
-        align-items: center;
-        /* flex-direction: column; */
-        /* 讓元素垂直排列 */
-        /* margin-bottom: 20px; */
-        /* 距離下方內容的距離 */
-    }
-
-    .profile-pic {
-        width: 200px;
-        height: 200px;
-        background-color: lightgray;
-        /* 你的大頭照 */
-        border-radius: 50%;
-        /* margin-bottom: 20px; */
-        overflow: hidden;
-        /* 裁剪超出邊界的部分 */
-        /* object-fit: cover; */
-    }
-
-    .profile-pic img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        /* 保持圖片比例，並且填充整個容器 */
-    }
-
-    .content {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-left: 20px;
-        /* 對齊左邊 */
-    }
-
-    .about-me {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .about-me-title {
-        font-weight: bold;
-        font-size: 22px;
-
-    }
-
-    .about-me-content {
-        font-size: 16px;
-        font-weight: bold;
-        padding: 5px;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-        background-color: #DDD0C8;
-        display: inline-block;
-    }
-
-    .buttons {
-        display: flex;
-        /* flex-direction: flex; */
-        /* 將圓圈排列改為垂直方向 */
-        /* margin-left: 20px; */
-        /* 距離大頭照的距離 */
-    }
-
-    .circle {
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        margin-right: 10px;
-        /* 圓圈之間的水平間距 */
-        margin-bottom: 20px;
-        /* 圓圈之間的間距 */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        font-weight: bold;
-        /* 設定粗體 */
-        font-size: 14px;
-        /* 設定字體大小 */
-        transition: background-color 0.3s ease;
-    }
-
-    .resume {
-        background-color: yellow;
-        color: black;
-    }
-
-    .project {
-        background-color: lightblue;
-        color: black;
-    }
-
-    .contact {
-        background-color: gray;
-        color: black;
-    }
-
-    .circle:hover {
-        background-color: white;
-    }
-
-    h1 {
-        font-size: 30px;
-    }
-
-    footer {
-        background-color: #f8efe6;
-        color: black;
-        padding: 20px 0;
-        text-align: center;
-        position: relative;
-    }
-
-    .contact-info {
-        display: flex;
-        justify-content: center;
-    }
-
-    .contact-item {
-        margin: 0 20px;
-    }
-
-    .contact-item img {
-        width: 20px;
-        height: 20px;
-        margin-right: 5px;
-    }
+}
 
 
+nav ul li a:hover {
+    /* background-color: #F0A5A0; */
+    /* 背景顏色變為 #F0A5A0 */
+    color: #D2B48C;
+    /* 文字顏色保持為黑色 */
+    /* font-weight: bold; */
 
-    .cat-animation {
-        width: 50px;
-        height: 50px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+    /* 讓元素垂直排列 */
+    /* margin-bottom: 20px; */
+    /* 距離下方內容的距離 */
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    background-color: lightgray;
+    /* 你的大頭照 */
+    border-radius: 50%;
+    /* margin-bottom: 20px; */
+    overflow: hidden;
+    /* 裁剪超出邊界的部分 */
+    /* object-fit: cover; */
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* 保持圖片比例，並且填充整個容器 */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+    /* 對齊左邊 */
+}
+
+.about-me {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.about-me-title {
+    font-weight: bold;
+    font-size: 22px;
+
+}
+
+.about-me-content {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #DDD0C8;
+    display: inline-block;
+}
+
+.buttons {
+    display: flex;
+    /* flex-direction: flex; */
+    /* 將圓圈排列改為垂直方向 */
+    /* margin-left: 20px; */
+    /* 距離大頭照的距離 */
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+    /* 圓圈之間的水平間距 */
+    margin-bottom: 20px;
+    /* 圓圈之間的間距 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: bold;
+    /* 設定粗體 */
+    font-size: 14px;
+    /* 設定字體大小 */
+    transition: background-color 0.3s ease;
+}
+
+.resume {
+    background-color: yellow;
+    color: black;
+}
+
+.project {
+    background-color: lightblue;
+    color: black;
+}
+
+.contact {
+    background-color: gray;
+    color: black;
+}
+
+.circle:hover {
+    background-color: white;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+footer {
+    background-color: #f8efe6;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-item {
+    margin: 0 20px;
+}
+
+.contact-item img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+
+
+.cat-animation {
+    width: 70px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    animation: catWalk 20s linear infinite, catChange 0.4s steps(1) infinite;
+    /* 添加catChange动画，每0.6秒切换一次图片 */
+}
+
+@keyframes catChange {
+
+    0%,
+    49.9% {
         background-image: url('../index/cat.png');
-        background-size: cover;
-        background-position: center;
-        position: absolute;
-        bottom: 100%;
+    }
+
+    50%,
+    100% {
+        background-image: url('../index/cat2.png');
+    }
+}
+
+@keyframes catWalk {
+    0% {
         left: 0;
-        animation: catWalk 20s linear infinite;
+        transform: scaleX(1);
     }
 
-    @keyframes catWalk {
-        0% {
-            left: 0;
-            transform: scaleX(1);
-            /* 貓的影像面向左邊 */
-        }
-
-        50% {
-            left: calc(100% - 100px);
-            /* 在動畫的中間點時，貓的位置在footer的最右邊 */
-            transform: scaleX(1);
-            /* 貓的影像繼續面向左邊 */
-        }
-
-        50.1% {
-            transform: scaleX(-1);
-            /* 貓的影像翻轉，使其面向右邊 */
-        }
-
-        100% {
-            left: 0;
-            transform: scaleX(-1);
-            /* 貓的影像翻轉，使其面向右邊 */
-        }
+    50% {
+        left: calc(100% - 100px);
+        transform: scaleX(1);
     }
+
+    50.1% {
+        transform: scaleX(-1);
+    }
+
+    100% {
+        left: 0;
+        transform: scaleX(-1);
+    }
+}
