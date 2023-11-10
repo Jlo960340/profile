@@ -113,6 +113,10 @@ nav ul li a:hover {
     margin: 10px;
     position: relative;
     overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .project-content {

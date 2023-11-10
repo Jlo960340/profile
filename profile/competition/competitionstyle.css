@@ -3,6 +3,14 @@ body {
     padding: 0;
     font-family: "Times New Roman", Times, serif;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body,
+html {
+    height: 100%;
 }
 
 body::before {
@@ -85,81 +93,59 @@ nav ul li a:hover {
     color: #D2B48C;
     /* 文字顏色保持為黑色 */
     /* font-weight: bold; */
-
 }
 
-.content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
+/* 增加樣式以達到所需效果 */
 
-.section {
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    /* 將這一行加入你的代碼中 */
-}
-
-
-.section h2 {
-    margin-right: 20px;
-    /* 添加右边距，调整标题和内容之间的间距 */
-}
-
-.section dl,
-.section ul {
+.competition-section {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    margin: 20px 0;
 }
 
-.section dl {
-    margin-left: auto;
+.competition-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
 }
 
-.section dl dd {
-    margin: 0 0 10px 0;
-    align-self: start;
+.competition-details {
+    margin-right: 20px;
 }
 
-.section dl dd,
-.section ul li {
-    align-self: flex-start;
-    margin: 0;
+
+.competition-item img {
+    width: 100px;
+    height: 100px;
 }
 
-h1,
-h2 {
-    font-weight: bold;
+.work-experience-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
 }
 
-dl {
-    margin: 0;
-    padding: 0;
+.work-experience-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
 }
 
-dt {
-    font-weight: bold;
-    margin-bottom: 5px;
+.company-logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
 }
 
-dd {
-    margin: 0 0 10px 0;
-}
-
-ul {
-    list-style-type: disc;
-    margin-left: 20px;
-}
 
 footer {
     background-color: #f8efe6;
     color: black;
     padding: 20px 0;
     text-align: center;
-    position: relative;
+
 }
 
 .contact-info {
